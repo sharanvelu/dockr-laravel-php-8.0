@@ -43,7 +43,7 @@ RUN docker-php-ext-install sysvmsg
 RUN docker-php-ext-install zip
 
 # xDebug
-RUN pecl install xdebug
+RUN pecl install xdebug-3.2.2
 COPY php/xdebug.ini /usr/local/etc/php/conf.d/dockr-xdebug.ini
 
 RUN mkdir -p /usr/local/dockr/composer
